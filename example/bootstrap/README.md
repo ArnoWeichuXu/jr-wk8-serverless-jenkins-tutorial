@@ -13,8 +13,8 @@ Since this bootstrap code creates such Terraform state management resources, spe
 # Replace my-state-bucket and my-lock-table with your preferred names
 terraform init
 terraform apply \
-    -var="state_bucket_name=my-state-bucket" \
-    -var="state_lock_table_name=my-lock-table"
+    -var="state_bucket_name=serverless-jenkins-state-bucket-arno" \
+    -var="state_lock_table_name=serverless-jenkins-lock-db-arno"
 ```
 2. The names of the state bucket and state lock table will be outputted after the successful apply. Take these values and use them in when deploying the serverless-jenkins module.
 
